@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(500deg, #99bafd, #f1b9ff);
+    padding: 10px;
+}
+
+
+.calculator{
+    margin: 25px 37%;
+    padding: 30px 30px 30px;
+    border-radius: 10px;
+    background: rgb(254, 236, 249);
+    
+}
+
+.screen{
+    padding: 40px 30px 40px;
+    border-radius: 10px;
+    align-items: center;
+    background: rgb(222, 254, 255);
+    font-family: 'Silkscreen', cursive;
+}
+
+/* .operations{
+     display: flex;
+    justify-content: space-between;
+ } */
+    
+
+#current{
+    font-size: 40px;
+    text-decoration:solid;
+    justify-content: flex-end;
+    width: fit-content;
+}
+
+#proces{
+    font-size: 40px;
+    text-decoration:solid;
+    justify-content: flex-end;
+    width: fit-content;
+}
+
+#current input {
+    font-family: 'Silkscreen', cursive;
+    font-size: 40px;
+    max-width: 40%;
+    margin-top: 30px;
+    text-align: right;
+    flex: 1;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+}
+
+#proces input {
+    font-family: 'Silkscreen', cursive;
+    font-size: 40px;
+    max-width: 40%;
+    margin-top: 30px;
+    text-align: right;
+    flex: 1;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* .keys{
+
+} */
+
+.eachRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eachKey{
+    /* with heiht and widt in 150 is perfect but to big
+    need or to use this or make the calc a bit smaller */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 10px;
+
+    background: rgb(255, 255, 255);
+    
+}

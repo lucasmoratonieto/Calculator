@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="calculator">
+                <div class="screen">
+                    <div class="operations">
+                        <div id="proces">
+                            <input type="text" name="proces" >
+                        </div>
+                        <div id="current">
+                            <input type="text" name="current" value="10">
+                        </div>
+                    </div>
+                </div>
+                <div class="keys">
+                    <div class="first-row eachRow">
+                        <input type="button" class="keyBackSpace eachKey" value="Back" onclick="current.value = current.value.toString().slice(0,-1)">
+                        <input type="button" class="eachKey" id="keyCE eachKey" value="CE" onclick="current.value = ''">   
+                        <input type="button" class="eachKey" id="keyC eachKey" value="C">
+                        <input type="button" class="eachKey" id="key+- eachKey" value="+ -">
+                    </div>
+
+                    <div class="second-row eachRow ">
+                        <input type="button" class="eachKey" id="key7 eachKey number" value="7" onclick="current.value += '7'">
+                        <input type="button" class="eachKey" id="key8 eachKey number" value="8" onclick="current.value += '8'">   
+                        <input type="button" class="eachKey" id="key9 eachKey number" value="9" onclick="current.value += '9'">
+                        <input type="button" class="eachKey" id="keyDivide eachKey" value="/" onclick="divideFunction()">
+                    </div>
+                    <div class="third-row eachRow ">
+                        <input type="button" class="eachKey" id="key4 eachKey number" value="4" onclick="current.value += '4'">
+                        <input type="button" class="eachKey" id="key5 eachKey number" value="5" onclick="current.value += '5'">   
+                        <input type="button" class="eachKey" id="key6 eachKey number" value="6" onclick="current.value += '6'">
+                        <input type="button" class="eachKey" id="keyMultiply eachKey" value="*">
+                    </div>
+                    <div class="fourth-row eachRow ">
+                        <input type="button" class="eachKey" id="key1 eachKey number" value="1" onclick="current.value += '1'">
+                        <input type="button" class="eachKey" id="key2 eachKey number" value="2" onclick="current.value +='2'">  
+                        <input type="button" class="eachKey" id="key3 eachKey number" value="3" onclick="current.value += '3'">
+                        <input type="button" class="eachKey" id="key- eachKey" value="-">
+                    </div>
+                    <div class="fifth-row eachRow ">
+                        <input type="button" class="eachKey" id="key0 eachKey" value="0" onclick="current.value += '0'">
+                        <input type="button" class="eachKey" id="key eachKey" value=",">   
+                        <input type="button" class="eachKey" id="key+ eachKey" value="+" onclick="summing() " >
+                        <input type="button" class="eachKey" id="key= eachKey" value="=">
+                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
